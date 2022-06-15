@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+	/* general styles*/
+		html,
+		body {
+			height: 100%;
+			background-color: #e1e5ea;
+			font-family: 'Epilogue', sans-serif;
+		}
+
+
+		/* nav styles*/
+
+		#nav-bar{
+			height: auto;
+			background-color: white;
+		}
+
+		.col{
+			border: solid red 1px;
+		}
+
+		@media  (max-width: 320px){
+			.navTop .navDown{
+				display: flex;
+				flex-direction: column;
+			}			
+		}
+
+		.navDown{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			margin: 10px;
+		}
+
+				
+
+		.inputgroup {
+			position: relative;
+			display: -ms-flexbox;
+			display: flex;
+			flex-direction: row;
+			align-items: center ;
+			width: 100%;
+			
+		}
+
+		.form-control {
+			display: block;
+			width: 88%;
+			background-color: #e1e5ea;
+			background-clip: padding-box;
+			border-radius: 2em;
+			margin: 10px;
+			-webkit-border-radius: 2em;
+			-moz-border-radius: 2em;
+			-ms-border-radius: 2em;
+			-o-border-radius: 2em;
+}
+		
+
+		.searchIcon{
+			font-size: 32px;
+			color: black;
+			margin: 5px;
+		}
+
+		.navBottomLeft{
+			display: flex;
+			padding: 10px;
+		}
+
+		.navIntro{
+			display: flex;
+			flex-direction: column;
+			margin-left: 18px;
+		}
+
+		.navBottomRight{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.btn-group{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn{
+			background-color: rgb(10, 116, 169);
+			font-weight: 600;
+			color: white;
+			padding: 15px;
+			border: 1px solid white;
+			margin: 20px;
+			
+}
+
+.btn:hover{
+	background-color: white;
+	font-weight: 600;
+	color:  rgb(10, 116, 169);
+	padding: 12px;
+	border: 1px solid rgb(10, 116, 169) ;
+}
+
+
+		
+		  
+
+		/* side styles*/
+
+		.sidebar {
+			height: auto;
+			background: rgb(10, 116, 169);
+			text-align: center;
+			color: white;
+			padding: 15px;			
+		}
+
+		.sideTop{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			margin-top: 20px;			
+		}
+       
+		.ionSizeL{
+			font-size: 40px;
+			margin-top: -10px;
+			margin-right: 5px;
+		}
+
+		.ionSizeM{
+			margin-top: -6px;
+			font-size: 24px;
+			margin-right: 8px;
+		
+		}
+
+		.sideMenu{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			color: white;
+			height: auto;
+		}
+
+		.sideMenu > a{
+			text-decoration: none;
+			color: white;
+            display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			margin: 5px;
+		}
+
+		.logOut{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			color: orangered;
+			height: auto;
+		}
+
+		.ionSize{
+			color: orangered;
+			font-size: 32px;
+			margin-top: -3px;
+			margin-right: 5px;
+		}
+
+
+	/** main view styles **/
+	.grid-wrapper{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.projectBody{
+		cursor: pointer;
+		grid-column: 1/-1;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+	}
+
+	.box{
+		box-shadow: 2px 2px 2px 2px grey;
+		background-color: rgb(214, 214, 231); 
+		padding: 120px;
+		margin: 10px;
+	 }
+
+
+		  
+		  
+
+
+		 /** media queries for responsive interface **/
+ /** tablet view **/
+ @media (min-device-width: 764px) 
+ and (max-device-width: 990px)
+ and (-webkit-min-device-pixel-ratio: 1){
+	
+
+	.ionSizeL{
+		display: none;
+	}
+
+	.ionSizeM{
+		display: none;	
+	}
+
+	.ionSize{
+		display: none;	
+	}
+
+	h4{
+		font-size: 2.2em;
+	}
+
+	h5{
+		font-size: 2em;
+		color: orangered;
+		margin-left: 30px;
+	}
+
+	h6{
+		font-size: 1.8em;
+		margin: 20px;
+	}
+
+ }
+
+
+
+
+ /* Mobile devices view */
+
+@media only screen 
+and (min-device-width: 175px) 
+and (max-device-width: 764px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .navTop .navDown{
+		display: flex;
+		flex-direction: column;
+	}
+
+	h4{
+		
+		font-size: 2.2em;
+	}
+
+	h5{
+		display: none;
+	}
+
+	h6{
+		display: none;
+	}
+
+	.ionSizeL{
+		display: none;
+	}
+
+	.ionSize{
+		font-size: 3.5em;
+		color: orangered;
+		margin-top: 20px;
+	}
+
+	.sideMenu{
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.ionSizeM{
+		margin: 30px;
+		font-size: 50px;	
+	}
+}

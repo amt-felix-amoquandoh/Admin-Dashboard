@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/brand Icon/suit.png" />
+	<title>Topnav with sidebar</title>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- Import bootstrap cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+	 <!-- Custom styles -->
+	 <link rel="stylesheet" href="./css/styles.css" />
+	
+</head>
+
+<body>
+	<!-- h-100 takes the full height of the body-->
+	<div class="container-fluid h-100">
+		<div class="row h-100">
+			<div class="col-lg-2 col-md-3 col-sm-4 sidebar" id="sidebar">
+				<div class="sideTop">
+					<ion-icon class="ionSizeL" name="options-outline"></ion-icon>
+					<h4><b>Dashboard</b></h4>
+				</div>
+
+				<!-- Navigation links in sidebar-->
+				<div class="sideMenu">
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+					<ion-icon class="ionSizeM" name="home"></ion-icon>
+					<h6><b>Home</b></h6>
+					</a>
+				
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="person"></ion-icon>
+					<h6><b>Profile</b></h6>
+					</a>
+				
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="mail"></ion-icon>
+					<h6><b>Messages</b></h6>
+					</a>
+
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="hourglass"></ion-icon>
+					<h6><b>History</b></h6>
+					</a>
+
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="construct"></ion-icon>
+					<h6><b>Tasks</b></h6>
+
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="people"></ion-icon>
+					<h6><b>Communites</b></h6>
+					</a>
+					</a><br><br>
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="cog"></ion-icon>
+					<h6><b>Settings</b></h6>
+					</a>
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="globe"></ion-icon>
+					<h6><b>Support</b></h6>
+					</a>
+					<a href="#" type="button" class="animate__animated  animate__fadeInLeft">
+						<ion-icon class="ionSizeM" name="lock-closed"></ion-icon>
+					<h6><b>Privacy</b></h6>
+					</a>
+					<span >
+						<a class="logOut" href="#" type="button" class="animate__animated  animate__fadeInLeft">
+							<ion-icon class="ionSize" name="log-out"></ion-icon>
+						<h5><b>Log Out</b></h5>
+						</a>	
+					</span>
+					
+					
+				</div>
+				
+				
+			</div>
+			<div class="col-lg-10 col-md-9 col-sm-8" style="padding: 0;">
+
+				<!-- Top navbar -->
+				<nav id="nav-bar">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-md-12 col-sm-12 navTop">
+									<div class="inputgroup">
+										<span class="" id="#">
+											<ion-icon class="searchIcon" name="search"></ion-icon>
+										</span>
+										<input type="text" class="form-control">
+									  </div>
+								  
+							</div>
+							<div class="col-lg-4 col-md-12 col-sm-12">
+								<div class="navDown">
+									<ion-icon size="large" name="notifications"></ion-icon>
+								<!-- Avatar -->
+								<div class="avatar">
+									<a>
+										<img src="./images/20220225_135838.jpg" class="rounded-circle"
+											height="50" alt="admin" loading="lazy" />
+									</a>
+								</div>
+								<p class="username">
+									<h5><b>Admin Name</b></h5>
+								</p>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-7 col-md-12 navBottomLeft">
+									<div class="avatar">
+										<a>
+											<img src="./images/20220225_135838.jpg" class="rounded-circle"
+												height="70" alt="admin" loading="lazy" />
+										</a>
+									</div>
+									<div class="navIntro">
+										<p >
+											<h6><b>Hi there,👋  </b></h6>
+											<h4><b>Admin Name <span>(@admin)</span></b></h4>
+										</p>
+									</div>
+									
+								</div>
+								<div class="col-lg-5 col-md-12">
+									<div class="navBottomRight">
+										<div class="btn-group" role="group" aria-label="Basic mixed styles example">
+											<button type="button" class="btn">New</button>
+											<button type="button" class="btn">Upload</button>
+											<button type="button" class="btn">Share</button>
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</nav>
+
+				<!-- Contains the main content of the webpage-->
+				<div class="container-fluid projectBody">
+					<div class="app blue grid-wrapper">
+						<div class="box app"><img src="./images/New folder/computer.png"></div>
+						<div class="box app"><img src="./images/New folder/laptop.png"></div>
+						<div class="box app"><img src="./images/New folder/folders.png"></div>
+						<div class="box app"><img src="./images/New folder/money-bag.png"></div>
+						<div class="box app"><img src="./images/New folder/note.png"></div>
+						<div class="box app"><img src="./images/New folder/presentation.png"></div>
+						<div class="box app"><img src="./images/New folder/notebook.png"></div>
+						<div class="box app"><img src="./images/New folder/phone.png"></div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- Import jquery cdn -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+
+	<!-- Import popper.js cdn -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+
+	<!-- Import javascript cdn -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
+
+</html>
