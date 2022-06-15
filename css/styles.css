@@ -16,9 +16,6 @@
 			background-color: white;
 		}
 
-		.col{
-			border: solid red 1px;
-		}
 
 		@media  (max-width: 320px){
 			.navTop .navDown{
